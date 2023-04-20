@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt'br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExerciciosGrupo1</title>
+    <link rel="stylesheet" href="Sopc.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+   
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Universidade Eduardo Mondlane</h1>
+        <h2>Programação Concorrente: Grupo1</h2>
+        <hr />
+        <br />
+    </header>
+
+        <section class="menu">
+            <nav>
+                <p>
+                    <a href="">Relatorio </a>
+                </p>
+                <p>
+                    <a href="">Slide G</a>
+                </p>
+                <p><a href="">Livros</a></p>
+                <p>Respostas</p>
+            </nav>
+        </section>
+        <section class="conteudo">
+            <h2>Perguntas</h2>
+
+                    <section id="p0">
+                        <p>
+                            1-O que é um thread? <br />
+                            <label for="a">
+                                <input type="radio" name="p0" value="1" id="a" onclick="resposta(0,this)" />
+                                a) É uma linha de execução, que compartilha o mesmo espaço de
+                                endereçamento com os outros threads dentro de um
+                                processo.</label>
+                        </p>
+                        <p>
+                    
+                            <label for="b">
+                                <input type="radio" name="p0" value="2" id="b" onclick="resposta(0,this)"/>
+                                b) É uma processo leve, pequeno processo, que compartilha o mesmo
+                                espaço de endereçamento com um processo dentro dos outros
+                                threads.</label>
+                        </p>
+                        <p>
+                            <label for="c">
+                            <input type="radio" name="p0" id="c" value="3" onclick="resposta(0,this)"/>
+                           c) É uma linha de execução, que compartilha o mesmo espaço de
+                                endereçamento com os outros threads dentro de um
+                                processo.</label>
+                        </p>
+                        <p>
+                    
+                            <label for="d" >
+                                <input type="radio" name="p0" id="d" value="4" onclick="resposta(0,this)"/>
+                                d)É uma unidade basica de um processo, basea-se em dois conceitos
+                                independentes: agrupamento de recusos e execução.
+                            </label>
+                        </p>
+                        <br />
+                    </section>
+                    <section id="p1">
+                        <p>2-Como um thread entra no estado morto?</p>
+                        <p>
+                    
+                            <label for="e">
+                                <input type="radio" name="p1" id="e" value="1" onclick="resposta(1,this)" />
+                                a)Um thread entra no estado morto quando conclui sua tarefa ou
+                                quando um outro thread o esta pronto para execução.</label>
+                        </p>
+                        <p>
+                    
+                            <label for="f">
+                                <input type="radio" name="p1" id="f" value="2" onclick="resposta(1,this)"/>
+                                b)Um thread entra no estado morto quando Emite requisição de E/S ou
+                                quando um outro thread o termina.</label>
+                        </p>
+                        <p>
+                    
+                            <label for="g">
+                                <input type="radio" name="p1" id="g" data-resultado="true" value="3" onclick="resposta(1,this)"/>
+                                c) Um thread entra no estado morto quando conclui sua tarefa ou
+                                quando um outro thread o termina.</label>
+                        </p>
+                        <p>
+                    
+                            <label for="h">
+                                <input type="radio" name="p1" id="h" value="4" onclick="resposta(1,this)" />
+                                d) Um thread entra no estado morto quando conclui sua tarefa ou
+                                quando adormece por espera de um evento.
+                            </label>
+                        </p>
+                        <br />
+                    </section>
+                    <section id="p2">
+                        <p>
+                            3-Quais são as semelhanças entre os estados de espera, bloqueado, e
+                            adormecido?
+                        </p>
+                        <p>
+                            <label for="i">  <input type="radio" value="1" name="p2" id="i" onclick="resposta(2,this)" />
+                                a) Esses estados são semelhantes porque quando os threads estão
+                                neles não podem usar um processador mesmo que esteja disponível.
+                                Um thread bloqueado não pode ser despachado, pois está esperando
+                                por evento e notificação. Nesse caso, o sistema operacional é
+                                responsável por eventualmente acordar o thread. Um thread em
+                                espera não pode ser despachado até receber um evento do hardware
+                                ou do software que não é iniciado pelo sistema operacional.</label>
+                        </p>
+                        <p>
+                            <label for="j">
+                                <input type="radio" name="p2" id="j" value="2" data-resultado="true" onclick="resposta(2,this)"/>
+                                b) Esses estados são semelhantes porque quando os threads estão
+                                neles não podem usar um processador mesmo que esteja disponível.
+                                Um thread bloqueado não pode ser despachado, pois está esperando
+                                por uma operação de E/S requisitada. Nesse caso, o sistema
+                                operacional é responsável por eventualmente desbloquear o thread.
+                                Um thread em espera não pode ser despachado até receber um evento
+                                do hardware ou do software que não é iniciado pelo sistema
+                                operacional.</label>
+                        </p>
+                        <p>
+                            <label for="k">
+                                <input type="radio" name="p2" id="k" value="3" onclick="resposta(2,this)"/>
+                                c) Esses estados são semelhantes porque quando os threads estão
+                                neles não podem usar um processador mesmo que esteja disponível.
+                                Um thread bloqueado pode ser despachado, pois está esperando por
+                                uma operação de E/S requisitada. Nesse caso, o sistema operacional
+                                é responsável por eventualmente desbloquear o thread. Um thread em
+                                espera pode ser despachado até receber um evento do hardware ou do
+                                software que não é iniciado pelo sistema operacional.</label>
+                        </p>
+                        <p>
+                            <label for="l">
+                                <input type="radio" name="p2" id="l" value="4" onclick="resposta(2,this)"/>
+                                d) Esses estados são semelhantes porque quando os threads estão
+                                neles não podem usar um processador mesmo que esteja disponível.
+                                Um thread bloqueado não pode ser despachado, pois está esperando
+                                por uma operação de E/S requisitada. Nesse caso, o sistema
+                                operacional é responsável por eventualmente acordar ou notificar o
+                                thread. Um thread em espera pode ser despachado até receber um
+                                evento do hardware ou do software que não é iniciado pelo sistema
+                                operacional.
+                            </label>
+                        </p>
+                        <br />
+                        </section>
+
+
+
+
+                        <section id="p3">
+                            <p>
+                                <p>4-Quais são os tipos de threads que conheces? Descreva-os.</p>
+                            </p>
+                            <p>
+                                <label for="m">  <input type="radio" value="1" name="p3" id="m" onclick="resposta(3,this)" />
+                                    a) Os <b> threads de usuário</b> executam operações de suporte a
+                                    threads no espaço do usuário, o que significa que os threads são
+                                    criados por bibliotecas em tempo de execução que não podem
+                                    executar instruções privilegiadas nem acessar as primitivas do
+                                    núcleo diretamente. <br />
+                                    <b>Threads</b> de núcleo são diferentes de processos pesados
+                                    porque compartilham o espaço de endereçamento do seu processo.
+                                    Cada thread de núcleo também armazena dados específicos de thread,
+                                    como conteúdos de registradores e um identificador de thread para
+                                    cada thread do sistema. <br />
+                                    Thread hibrida- Combinação da implementação de threads de usuário
+                                    e de núcleo.</label>
+                            </p>
+                            <p>
+                                <label for="n">
+                                    <input type="radio" name="p3" id="n" value="2" data-resultado="true" onclick="resposta(2,this)"/>
+                                    b) Os <b> threads de usuário</b> são criadas e gerenciadas pelo
+                                proprio processo do usuario, sem a intervencao do kernel. Essas
+                                threads são leves e são executadas em espaco de usuario, sem a
+                                necessidade de mudar para o proprio kernel. <br />
+                                <b>Threads de núcleo</b> Thread de Sistema(Thread do kernel) : são
+                                criadas e gerenciadas pelo kernel do sistema operacional. Elas são
+                                mais pesadas do que as threads de usuario e exigem uma mudança
+                                para o modo kernel para serem executadas. <br />
+                                Thread hibrida- implementação de threads de usuário no nucleo.</label>
+                            </p>
+                            <p>
+                                <label for="o">
+                                    <input type="radio" name="p3" id="o" value="3" onclick="resposta(3,this)"/>
+                                    c) Os <b> threads de usuário</b> são criadas e gerenciadas pelo
+                                proprio processo do usuario, sem a intervencao do kernel. Essas
+                                threads são leves e são executadas em espaco de usuario, sem a
+                                necessidade de mudar para o proprio kernel. <br />
+                                <b>Threads de núcleo</b> Thread de Sistema(Thread do kernel) : são
+                                criadas e gerenciadas pelo kernel do sistema operacional. Elas são
+                                mais pesadas do que as threads de usuario e exigem uma mudança
+                                para o modo kernel para serem executadas. <br />
+                                <b> Thread hibrida</b>- implementação de threads de usuário no
+                                nucleo.</label>
+                            </p>
+                            <p>
+                                <label for="p">
+                                    <input type="radio" name="p3" id="p" value="4" onclick="resposta(3,this)"/>
+                                    d) Somente A e C. 
+                                </label>
+                            </p>
+                            <p>
+                                <label for="q">
+                                    <input type="radio" name="p3" id="q" value="5" onclick="resposta(3,this)"/>
+                                    e) Somente B e C
+                            </p>
+                            <br />
+                            </section>
+
+               
+                    <section>
+                        <p>5- O que são primitivas de sincronização de threads?</p>
+
+                    </section>
+                    <section>
+                        <p>6- Qual é a diferença entre semáforos e mutexes? Quando voc&ecirc; usaria um em vez do outro? </p>
+                        
+                        <br>
+                    </section>
+                    <section>
+                        <p>7- O que é um deadlock e como ele pode ocorrer em um sistema como múltiplos processos ou threads?
+                        </p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>8-Quais são as vantagens e desvantagens de usar monitores em vez de semáforos ou mutexes? </p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>9- Como voc&ecirc; pode evitar condições de corrida em um programa concorrente?</p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>10- O que são construções concorrentes de alto nivel e como elas diferem em termos de recursos e
+                            limitações??</p>
+                    </section>
+
+                    <section>
+                        <br>
+                        <p>11- Quais são as principais construções concorentes de alto nível para programadores, e como elas
+                            diferem em termos de recursos e limitações?</p>
+                    </section>
+                    
+                    <section>
+                        <br>
+                        <p>12- Como as construções conxcorrentes de alto nivel podem ser utilizadas para aumentar a
+                            efici&ecirc;ncia e o desempenho de sistemas computacionais?</p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>13- Como as construções concorrentes concorrentes de alto nivel, podem ser aplicadas em diferentes
+                            contextos, como sistemas operacionais, jogos e bancos de dados?</p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>14- D&ecirc; exemplos de alguns problemas clássicos de programação concorrente.</p>
+                        <br>
+                    </section>
+
+                    <section>
+                        <p>15- Como poderiamos resolver o problema de buffer limitado?</p>
+ 
+                    </section>
+
+                    <button onclick= "validar()">VALIDAR</button>
+                    <h2 id="h2">Quantidade acertadas: <span id="resultado"></span></h2>
+                   
+                </section>
+                        </section>
+
+    <footer class="rodape">
+        <br /><br /><br /><br />
+        <section id="sobreNos">
+            <h3>SOBRE NÓS</h3>
+            <p>Quem somos?</p>
+            <p>Estudantes</p>
+            <p>Faculdade de Engenhria</p>
+            <p>Engenharia Informatíca</p>
+            <p></p>
+        </section>
+        <section id="nomes">
+            <h3>NOMES</h3>
+            <p>Xavier, Omar Davide</p>
+            <p>Mandlate, Enoque</p>
+            <p>Firme, Alfoi</p>
+            <p>Cassamo, Kayron</p>
+            <p>Belmiro Mungoi</p>
+        </section>
+        <section id="ajudaSuporte">
+            <h3>AJUDA E SUPORTE</h3>
+            <p>Contacto:</p>
+            <p>+(258)84 380 1472;</p>
+            <p>+(258)84 651 5232;</p>
+            <p>+(258)86 596 8758;</p>
+            <p></p>
+        </section>
+    </footer>
+    <script src="Sopc.js"></script>
+</body>
+
+</html>
