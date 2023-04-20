@@ -219,34 +219,246 @@
                             </section>
 
                
-                    <section>
-                        <p>5- O que são primitivas de sincronização de threads?</p>
+                            <section id="p4">
+                                <p>
+                                    <p>5- O que são primitivas de sincronização de threads?</p> <br />
+                                    <label for="aa">
+                                        <input type="radio" name="p5" value="1" id="aa" onclick="resposta(4,this)" />
+                                        a) Primitivas de sincronização são mecanismos utilizados em programação concorrente 
+                                        para controlar o acesso a recursos de entrada e saida entre threads ou processos, a fim de 
+                                        garantir que esses recursos sejam acessados de maneira ordenada e segura.</label>
+                                </p>
+                                <p>
+                            
+                                    <label for="bb">
+                                        <input type="radio" name="p4" value="2" id="bb" onclick="resposta(4,this)"/>
+                                        b) Primitivas de sincronização são mecanismos utilizados em programação concorrente 
+                                        para controlar o acesso a recursos compartilhados entre threads ou processos, a fim de 
+                                        garantir que esses recursos sejam acessados de maneira ordenada e segura.</label>
+                                </p>
+                                <p>
+                                    <label for="cc">
+                                    <input type="radio" name="p4" id="cc" value="3" onclick="resposta(4,this)"/>
+                                   c) Primitivas de sincronização são mecanismos utilizados em programação concorrente 
+                                   para controlar o acesso a recursos compartilhados e exclusivos entre threads ou processos, a fim de 
+                                   garantir que esses recursos sejam acessados de maneira ordenada e segura.</label>
+                                </p>
+                                <p>
+                            
+                                    <label for="dd" >
+                                        <input type="radio" name="p4" id="dd" value="4" onclick="resposta(4,this)"/>
+                                        d)Todas as alternativas.
+                                    </label>
+                                </p>
+                                <br />
+                            </section>
 
-                    </section>
-                    <section>
+
+                    <section ip="p5">
                         <p>6- Qual é a diferença entre semáforos e mutexes? Quando voc&ecirc; usaria um em vez do outro? </p>
-                        
+                        <p>
+                            <label for="aaa">
+                                <input type="radio" name="p5" value="1" id="aaa" onclick="resposta(5,this)" />
+                                a) Semáforos e mutexes são duas primitivas de sincronização diferentes usadas para 
+                                controlar o acesso a recursos compartilhados em um ambiente concorrente. O semáforo é 
+                                mais adequado para cenários em que um número limitado de threads pode acessar um 
+                                recurso compartilhado simultaneamente. Já o mutex é mais apropriado para proteger 
+                                recursos compartilhados em cenários em que apenas uma thread pode acessar o recurso de 
+                                cada vez.
+                                </label>
+                        </p>
+                        <p>
+                    
+                            <label for="bbb">
+                                <input type="radio" name="p5" value="2" id="bbb" onclick="resposta(5,this)"/>
+                                b) Semáforos e mutexes são duas primitivas de sincronização diferentes usadas para 
+                                controlar o acesso a recursos compartilhados em um ambiente concorrente. O semáforo é 
+                                menos adequado para cenários em que um número limitado de threads pode acessar um 
+                                recurso compartilhado simultaneamente. Já o mutex é menos apropriado para proteger 
+                                recursos compartilhados em cenários em que apenas uma thread pode acessar o recurso de 
+                                cada vez.
+                                </label>
+                        </p>
+                        <p>
+                            <label for="ccc">
+                            <input type="radio" name="p5" id="ccc" value="3" onclick="resposta(5,this)"/>
+                           c) Semáforos e mutexes são duas primitivas de sincronização diferentes usadas para 
+                           controlar o acesso a recursos compartilhados em um ambiente concorrente. O semáforo é 
+                           mais adequado para cenários em que um número limitado de threads pode acessar um 
+                           recurso compartilhado simultaneamente. Já o mutex é menos apropriado para proteger 
+                           recursos compartilhados em cenários em que apenas uma thread pode acessar o recurso de 
+                           cada vez.
+                           .</label>
+                        </p>
+                        <p>
+                    
+                            <label for="ddd" >
+                                <input type="radio" name="p5" id="ddd" value="4" onclick="resposta(0,this)"/>
+                                d)Semáforos e mutexes são duas primitivas de sincronização diferentes usadas para 
+                                controlar o acesso a recursos compartilhados em um ambiente concorrente. O semáforo é 
+                                menos adequado para cenários em que um número limitado de threads pode acessar um 
+                                recurso compartilhado simultaneamente. Já o mutex é mais apropriado para proteger 
+                                recursos compartilhados em cenários em que apenas uma thread pode acessar o recurso de 
+                                cada vez.
+                                
+                            </label>
+                        </p>
+                        <br />
                         <br>
                     </section>
-                    <section>
+
+
+                    <section id="p6">
                         <p>7- O que é um deadlock e como ele pode ocorrer em um sistema como múltiplos processos ou threads?
                         </p>
+                        
+
+                        <p>
+                            
+                            <label for="ba">
+                                <input type="radio" name="p6" value="1" id="ba" onclick="resposta(6,this)"/>
+                                a) Um deadlock é uma situação em que duas ou mais threads ou processos estão 
+                                bloqueados, aguardando que o outro libere um recurso que eles precisam para continuar. 
+                                Isso pode ocorrer quando as threads ou processos não liberam recursos adequadamente ou 
+                                quando são alocados recursos insuficientes para executar as tarefas. Para evitar deadlocks, 
+                                é importante usar primitivas de sincronização corretamente e garantir que haja recursos 
+                                suficientes disponíveis</label>
+                        </p>
+                        <p>
+                            
+                            <label for="bc">
+                                <input type="radio" name="p6" value="2" id="bc" onclick="resposta(6,this)"/>
+                                b) Um deadlock é uma situação em que uma thread ou um processo está
+                                bloqueado, aguardando que o outro entre em um recurso que ele precisa para continuar. 
+                                Isso pode ocorrer quando as threads ou processos não liberam recursos adequadamente ou 
+                                quando são alocados recursos insuficientes para executar as tarefas. Para evitar deadlocks, 
+                                é importante usar primitivas de sincronização corretamente e garantir que haja recursos 
+                                suficientes disponíveis</label>
+                        </p>
+                        <p>
+                            
+                            <label for="bcc">
+                                <input type="radio" name="p6" value="3" id="bcc" onclick="resposta(6,this)"/>
+                                c) Um deadlock é uma situação em que duas ou mais threads ou processos estão 
+                                em espera, ou adormecendo, aguardando que o outro libere um recurso que eles precisam para continuar. 
+                                Isso pode ocorrer quando as threads ou processos não liberam recursos adequadamente ou 
+                                quando são alocados recursos insuficientes para executar as tarefas. Para evitar deadlocks, 
+                                é importante usar primitivas de sincronização corretamente e garantir que haja recursos 
+                                suficientes disponíveis.</label>
+                        </p>
+                        <p>
+                            
+                            <label for="bf">
+                                <input type="radio" name="p6" value="4" id="bf" onclick="resposta(6,this)"/>
+                                d) Nenhuma das alternativas.</label>
+                        </p>
+
+
                         <br>
                     </section>
 
                     <section>
                         <p>8-Quais são as vantagens e desvantagens de usar monitores em vez de semáforos ou mutexes? </p>
                         <br>
+                        <p>
+                            <label for="bj">
+                                <input type="radio" name="p7" value="1" id="bj" onclick="resposta(7,this)"/>
+                                a) Os monitores são uma primitiva de sincronização não permitem que apenas uma thread 
+                                acesse um recurso compartilhado por vez, em vez de permitir que várias threads acessem 
+                                simultaneamente. Isso pode tornar o código mais fácil de ler e entender, pois a lógica de 
+                                sincronização é encapsulada no monitor em vez de espalhada pelo código. No entanto, os 
+                                monitores podem ser mais eficientes e velozes do que outras primitivas de sincronização e podem levar 
+                                a problemas de desempenho em ambientes de alta concorrência.</label>
+                        </p>
+                        <p>
+                            <label for="bk">
+                                <input type="radio" name="p7" value="4" id="bk" onclick="resposta(7,this)"/>
+                                b) Os monitores são uma primitiva de sincronização que permite que apenas uma thread 
+                                acesse um recurso compartilhado por vez, em vez de permitir que várias threads acessem 
+                                simultaneamente. Isso pode tornar o código mais fácil de ler e entender, pois a lógica de 
+                                sincronização é encapsulada no monitor em vez de espalhada pelo código. No entanto, os 
+                                monitores podem ser mais lentos do que outras primitivas de sincronização e podem levar 
+                                a problemas de desempenho em ambientes de alta concorrência.</label>
+                        </p>
+                        <p>
+                            
+                            <label for="bfff">
+                                <input type="radio" name="p7" value="3" id="bfff" onclick="resposta(7,this)"/>
+                                c) Nenhuma das alternativas.</label>
+                        </p>
+                        <p>
+                            
+                            <label for="ff">
+                                <input type="radio" name="p7" value="4" id="ff" onclick="resposta(7,this)"/>
+                                d) Os monitores são uma primitiva de sincronização que permite que apenas uma thread 
+                                acesse um recurso compartilhado por vez, em vez de permitir que várias threads acessem 
+                                simultaneamente. Isso pode tornar o código mais fácil de ler e entender, pois a lógica de 
+                                sincronização é encapsulada no monitor em vez de espalhada pelo código. No entanto, os 
+                                monitores podem ser mais lentos do que outras primitivas de sincronização e podem levar 
+                                a problemas de desempenho em ambientes de alta concorrência.</label>
+                        </p>
+
                     </section>
 
-                    <section>
-                        <p>9- Como voc&ecirc; pode evitar condições de corrida em um programa concorrente?</p>
+                    <section id="p8">
+                        <p>9-  Como pode-se evitar condições de corrida em um programa concorrente?</p>
                         <br>
+                        <p>
+                            
+                            <label for="adp" >
+                                <input type="radio" name="p8" id="adp" value="1" onclick="resposta(8,this)"/>
+                                a)Todas as alternativas abaixo.
+                            </label>
+                        </p>
+                        <p>
+                            
+                            <label for="ud" >
+                                <input type="radio" name="p8" id="ud" value="2" onclick="resposta(8,this)"/>
+                                d)Para evitar condições de corrida em um programa concorrente, é importante garantir 
+                                que as threads acessem recursos exclusivos de maneira compartilhada. Isso pode ser feito 
+                                usando primitivas de sincronização, como semáforos, mutexes ou monitores. Além disso, 
+                                é importante garantir que as operações em recursos compartilhados sejam atomicas, ou 
+                                seja, que sejam realizadas em uma única etapa, para evitar que outras threads interfiram no 
+                                meio da operação
+                            </label>
+                        </p>
+                        <p>
+                            
+                            <label for="dm" >
+                                <input type="radio" name="p4" id="dm" value="3" onclick="resposta(4,this)"/>
+                                c)Para evitar condições de corrida em um programa concorrente, é importante garantir 
+                                que as threads acessem recursos compartilhados de maneira exclusiva. Isso pode ser feito 
+                                usando primitivas de sincronização, como semáforos, mutexes ou monitores. Além disso, 
+                                é importante garantir que as operações em recursos compartilhados sejam estaticos, ou 
+                                seja, que sejam realizadas em uma única etapa, para evitar que outras threads interfiram no 
+                                meio da operação
+                            </label>
+                        </p>
+                        <p>
+                            
+                            <label for="gf" >
+                                <input type="radio" name="p8" id="gf" value="4" onclick="resposta(8,this)"/>
+                                d)Para evitar condições de corrida em um programa concorrente, é importante garantir 
+                                que as threads acessem recursos compartilhados de maneira exclusiva. Isso pode ser feito 
+                                usando primitivas de sincronização, como semáforos, mutexes ou monitores. Além disso, 
+                                é importante garantir que as operações em recursos compartilhados sejam atomicas, ou 
+                                seja, que sejam realizadas em uma única etapa, para evitar que outras threads interfiram no 
+                                meio da operação.
+                            </label>
+                        </p>
                     </section>
 
                     <section>
                         <p>10- O que são construções concorrentes de alto nivel e como elas diferem em termos de recursos e
                             limitações??</p>
+
+                            <p>
+                            
+                                <label for="dd" >
+                                    <input type="radio" name="p4" id="dd" value="4" onclick="resposta(4,this)"/>
+                                    d)Todas as alternativas.
+                                </label>
+                            </p>
                     </section>
 
                     <section>
