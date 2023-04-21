@@ -3,8 +3,9 @@
     padding-top: 10px;
     text-align: center;
     width: 100%;
+    height: 160px;
     position: fixed;
-    background-color: #fff
+    background-image: url(WhatsApp\ Image\ 2023-04-21\ at\ 9.57.54\ AM.jpeg);
 }
 
 .menu {
@@ -137,14 +138,6 @@ a#a2:hover{
 	color:white;
 	border-radius: 15px;
 }
-
-a#a3:hover{
-	padding: 5px;
-	background-color: darkcyan;
-	color:white;
-	border-radius: 15px;
-}
-
 
 a#a4:hover{
 	padding: 5px;
