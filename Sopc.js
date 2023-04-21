@@ -14,6 +14,6 @@ function validar() {
   for (quantidade_Correctas = 0, i = 0; i < correctas.length; i++)
     correctas[i] == respostaEscolhida[i] && quantidade_Correctas++;
   document.getElementById("resultado").innerHTML =
-    quantidade_Correctas + " de 12.";
+    quantidade_Correctas + " de 12. ";
     document.getElementById("gabarito").innerHTML =" 1A 2C 3B 4D 5B 6A 7B 8D 9D 10A 11C 12A";
 }
